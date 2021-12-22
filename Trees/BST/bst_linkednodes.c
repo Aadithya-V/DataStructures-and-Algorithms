@@ -35,7 +35,7 @@ return root;
 bool Search(struct BstNode* root, int data){
     if (root == NULL) return 0;
     else if (root ->data == data) return 1;
-    else if(data <= root ->data) return Search(root ->left, data);
+    else if (data <= root ->data) return Search(root ->left, data);
     else return Search(root ->right, data);
 }
 
